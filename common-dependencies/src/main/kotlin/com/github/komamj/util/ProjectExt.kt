@@ -1,4 +1,4 @@
-package com.github.komamj.dependencies.util
+package com.github.komamj.util
 
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.github.komamj.dependencies.plugin
+package com.github.komamj.plugin
 
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryExtension
-import com.github.komamj.dependencies.util.JUNIT
-import com.github.komamj.dependencies.util.KOTLIN
-import com.koma.componentization.dependencies.Configuration
+import com.github.komamj.util.JUNIT
+import com.github.komamj.util.KOTLIN
+import com.koma.componentization.Configuration
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -44,6 +44,7 @@ class CommonDependencies : Plugin<Project> {
 
     private fun configureDependencies(target: Project) {
         target.dependencies {
+            add("implementation", "fileTree(dir: ${"libs"}, include: [${"*.jar"}])")
             add(
                 "implementation",
                 "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$KOTLIN"

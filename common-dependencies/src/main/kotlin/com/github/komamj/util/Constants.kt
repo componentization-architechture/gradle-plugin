@@ -1,4 +1,4 @@
-package com.github.komamj.dependencies.util
+package com.github.komamj.util
 
 const val KOTLIN = "1.4.20"
 const val COROUTINES = "1.3.9"

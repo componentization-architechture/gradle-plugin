@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.koma.componentization.dependencies
+package com.koma.componentization
 
 open class Configuration {
     var lifecycle: Boolean = true
